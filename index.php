@@ -1,62 +1,54 @@
-<?php 
-include 'inc/header.php';
-include 'connection/config.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <title>Backpackers | Admin Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="login-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <h3 class="mb-3 d-flex justify-content-center mb-5">ADMIN LOGIN</h3>
+                <div class="shadow rounded">
+                    <div class="row">
+                        <div class="col-md-12 pe-0">
+                            <div class="form-left h-100 py-5 px-5">
+                                <form action="loginAction.php" method="POST" class="row g-4">
+                                        <div class="col-6">
+                                            <label>Email<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                <input type="email" class="form-control" name="email" placeholder="Enter Email" required>
+                                            </div>
+                                        </div>
 
-<section class="vh-100" style="background-image:url('assets/images/bg.jpg'); background-size:cover;">
-  <div class="container h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-12 col-xl-11">
-        <div class="card text-black" style="border-radius: 25px;">
-          <div class="card-body p-md-5">
-            <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                        <div class="col-6">
+                                            <label>Password<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                                <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+                                            </div>
+                                        </div>
 
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-
-                <form class="mx-1 mx-md-4" method="POST" action="userRegisterAction.php">
-                <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="name">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required />
+                                        <div class="col-12">
+                                            <input type="submit" class="btn btn-primary px-4 float-start mt-4 w-100" value="LOGIN">
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
-                <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="email">Your Email</label>
-                        <input type="email" id="email" name="email" class="form-control" required />
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="password">Password</label>
-                        <input type="password" id="password" name="password" class="form-control" required />
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="password">Confirm Password</label>
-                        <input type="password" id="password" name="conpassword" class="form-control" required />
-                    </div>
-                </div>
-                <p>Already have an account? <a href="login.php">Login Now</a></p>
-                <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="submit" class="btn btn-primary w-100">Register</button>
-                </div>
-                </form>
-
-
-              </div>
-              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
-                <img src="assets/images/side_img.png" alt="Sample image" class="img-fluid">
-
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
-<?php include 'inc/footer.php';?>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
